@@ -1,6 +1,6 @@
 # Study Buddy — AI Learning Companion
 
-**[Live demo →](https://your-app-name.onrender.com)** _(update this link once deployed — see Deploying below)_
+**[Live demo →](https://study-buddy-7w09.onrender.com/)** _(update this link once deployed — see Deploying below)_
 
 Paste any topic or article and Study Buddy turns it into a **structured quiz** and a **RAG-grounded tutor chat** — one that only answers from the material you gave it, with inline citations back to the source. Scores persist across sessions.
 
