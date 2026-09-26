@@ -109,7 +109,12 @@ async function callClaude(system, userContent, maxTokens = 1000) {
 }
 
 function parseJsonLoose(text) {
-  const clean = text.replace(/```json|```/g, "").trim();
+  let clean = text.replace(/```json|```/g, "").trim();
+  const start = clean.indexOf("{");
+  const end = clean.lastIndexOf("}");
+  if (start !== -1 && end !== -1 && end > start) {
+    clean = clean.slice(start, end + 1);
+  }
   return JSON.parse(clean);
 }
 
